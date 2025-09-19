@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan C. Godinez - Web Developer & Designer</title>
+    <meta name="description" content="Professional web developer and designer specializing in modern, dynamic web experiences. UI/UX design expert.">
+    <meta name="author" content="Allan C. Godinez">
+    <meta name="keywords" content="web developer, designer, react, node.js, javascript, portfolio">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Allan C. Godinez - Web Developer & Designer">
+    <meta property="og:description" content="Professional web developer and designer specializing in modern, dynamic web experiences.">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Allan C. Godinez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container text-center">
+            <div class="hero-content">
+                <h1 class="hero-title mb-4">Hi, I'm Allan C. Godinez</h1>
+                <p class="hero-subtitle mb-5">Web Developer | Designer | Creative Thinker</p>
+                <button class="btn btn-hero btn-lg" onclick="scrollToSection('#projects')">View My Work</button>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
+                <div class="scroll-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 13l3 3 7-7" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">A comprehensive overview of my technical expertise and proficiency levels</p>
+            </div>
+
+            
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="skills-container">
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                                <p class="skill-description">Modern semantic HTML5 and advanced CSS3 with animations</p>
+                            </div>
+                            
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <p class="skill-description">ES6+, async/await, DOM manipulation, and modern frameworks</p>
+                            </div>
+                            
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                                <p class="skill-description">Hooks, Context API, state management, and component architecture</p>
+                            </div>
+                            
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <p class="skill-description">Express.js, REST APIs, middleware, and server-side development</p>
+                            </div>
+                            
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <p class="skill-description">Django, Flask, data analysis, and automation scripting</p>
+                            </div>
+                            
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">Database</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                                <p class="skill-description">PostgreSQL, MongoDB, data modeling, and optimization</p>
+                            </div>
+                            
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                                <p class="skill-description">Figma, Adobe Creative Suite, user research, and prototyping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey through the tech industry, building innovative solutions</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card-portfolio">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h4 class="experience-title">Senior Full Stack Developer</h4>
+                                        <h5 class="experience-company">TechCorp Solutions</h5>
+                                    </div>
+                                    <div class="text-end">
+                                        <small class="experience-period">2022 - Present</small>
+                                        <small class="experience-location d-block">San Francisco, CA</small>
+                                    </div>
+                                </div>
+                                <ul class="experience-description">
+                                    <li>Lead development of scalable web applications serving 100k+ users</li>
+                                    <li>Architected microservices infrastructure reducing load times by 40%</li>
+                                    <li>Mentored junior developers and established coding best practices</li>
+                                </ul>
+                                <div class="experience-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card-portfolio">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h4 class="experience-title">Frontend Developer</h4>
+                                        <h5 class="experience-company">Creative Digital Agency</h5>
+                                    </div>
+                                    <div class="text-end">
+                                        <small class="experience-period">2020 - 2022</small>
+                                        <small class="experience-location d-block">Los Angeles, CA</small>
+                                    </div>
+                                </div>
+                                <ul class="experience-description">
+                                    <li>Developed responsive web interfaces for Fortune 500 clients</li>
+                                    <li>Implemented modern design systems and component libraries</li>
+                                    <li>Collaborated with design teams to create pixel-perfect implementations</li>
+                                </ul>
+                                <div class="experience-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Styled Components</span>
+                                    <span class="tech-tag">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card-portfolio">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h4 class="experience-title">Web Developer</h4>
+                                        <h5 class="experience-company">StartupHub Inc</h5>
+                                    </div>
+                                    <div class="text-end">
+                                        <small class="experience-period">2018 - 2020</small>
+                                        <small class="experience-location d-block">Austin, TX</small>
+                                    </div>
+                                </div>
+                                <ul class="experience-description">
+                                    <li>Built MVP products for early-stage startups</li>
+                                    <li>Optimized website performance and SEO rankings</li>
+                                    <li>Integrated third-party APIs and payment systems</li>
+                                </ul>
+                                <div class="experience-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">A showcase of my latest projects across web development, design, and photography</p>
+            </div>
+            
+            <!-- Category Filter -->
+            <div class="text-center mb-5">
+                <div class="btn-group project-filters" role="group">
+                    <button type="button" class="btn btn-filter active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-filter" data-filter="web-development">Web Development</button>
+                    <button type="button" class="btn btn-filter" data-filter="design">Design</button>
+                    <button type="button" class="btn btn-filter" data-filter="photography">Photography</button>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="row g-4 projects-grid">
+                <div class="col-lg-4 col-md-6 project-item" data-category="web-development">
+                    <div class="card-portfolio project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="E-Commerce Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m0-3h6v6m-11 5L18 3"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-category">Web Development</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">E-Commerce Platform</h4>
+                            <p class="project-description">Full-stack e-commerce solution with payment integration and admin dashboard</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 project-item" data-category="design">
+                    <div class="card-portfolio project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Brand Identity Design" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m0-3h6v6m-11 5L18 3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-category">Design</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Brand Identity Design</h4>
+                            <p class="project-description">Complete brand redesign including logo, colors, and style guide</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Adobe CC</span>
+                                <span class="tech-tag">Brand Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 project-item" data-category="web-development">
+                    <div class="card-portfolio project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Task Management App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-category">Web Development</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Task Management App</h4>
+                            <p class="project-description">Collaborative project management tool with real-time updates</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 project-item" data-category="photography">
+                    <div class="card-portfolio project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop" alt="Wedding Photography" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m0-3h6v6m-11 5L18 3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-category">Photography</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Wedding Photography</h4>
+                            <p class="project-description">Captured beautiful moments of Sarah & Michael's special day</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Canon 5D</span>
+                                <span class="tech-tag">Lightroom</span>
+                                <span class="tech-tag">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 project-item" data-category="web-development">
+                    <div class="card-portfolio project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="Mobile Banking App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m0-3h6v6m-11 5L18 3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-category">Web Development</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Mobile Banking App</h4>
+                            <p class="project-description">Secure banking interface with biometric authentication</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 project-item" data-category="photography">
+                    <div class="card-portfolio project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1f?w=600&h=400&fit=crop" alt="Urban Landscape Series" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m0-3h6v6m-11 5L18 3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-category">Photography</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Urban Landscape Series</h4>
+                            <p class="project-description">Street photography capturing the essence of city life</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Sony A7R</span>
+                                <span class="tech-tag">Capture One</span>
+                                <span class="tech-tag">Fine Art Print</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-5 bg-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Achievements & Milestones</h2>
+                <p class="section-subtitle">Numbers that reflect my journey and commitment to excellence</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-portfolio text-center achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 18l2-2v-8l-2-2H8l-2 2v8l2 2h8z"/>
+                                <path d="M6 12h12"/>
+                                <path d="M9 16h6"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-number" data-target="150">0</div>
+                        <h4 class="achievement-label">Projects Completed</h4>
+                        <p class="achievement-description">Successfully delivered web applications and digital solutions</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-portfolio text-center achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-number" data-target="50">0</div>
+                        <h4 class="achievement-label">Happy Clients</h4>
+                        <p class="achievement-description">Satisfied clients across various industries and company sizes</p><br><br>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-portfolio text-center achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-number" data-target="6">0</div>
+                        <h4 class="achievement-label">Years Experience</h4>
+                        <p class="achievement-description">Professional development experience in the tech industry</p><br><br>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-portfolio text-center achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18 8h1a4 4 0 010 8h-1"/>
+                                <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                                <line x1="6" y1="1" x2="6" y2="4"/>
+                                <line x1="10" y1="1" x2="10" y2="4"/>
+                                <line x1="14" y1="1" x2="14" y2="4"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-number" data-target="2500">0</div>
+                        <h4 class="achievement-label">Cups of Coffee</h4>
+                        <p class="achievement-description">Fuel for late-night coding sessions and creative breakthroughs</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="typewriter-container">
+                        <h3 class="typewriter-text" id="typewriterText"></h3>
+                    </div>
+                    <div class="about-content">
+                        <p>With over 6 years in the tech industry, I've had the privilege of working with startups to Fortune 500 companies, helping them bring their digital visions to life. My approach combines technical expertise with creative problem-solving.</p>
+                        <p>I'm constantly learning and evolving with the latest web technologies, always seeking to create user experiences that are not just functional, but memorable and impactful.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-portfolio">
+                        <h3 class="mb-4">What Drives Me</h3>
+                        <div class="passion-item">
+                            <div class="passion-icon">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <polyline points="16,18 22,12 16,6"/>
+                                    <polyline points="8,6 2,12 8,18"/>
+                                </svg>
+                            </div>
+                            <div class="passion-content">
+                                <h5>Clean Code</h5>
+                                <p>Writing maintainable, scalable, and efficient code that stands the test of time</p>
+                            </div>
+                        </div>
+                        <div class="passion-item">
+                            <div class="passion-icon">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div class="passion-content">
+                                <h5>Design Systems</h5>
+                                <p>Creating consistent, beautiful interfaces with thoughtful user experience</p>
+                            </div>
+                        </div>
+                        <div class="passion-item">
+                            <div class="passion-icon">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="5"/>
+                                    <line x1="12" y1="1" x2="12" y2="3"/>
+                                    <line x1="12" y1="21" x2="12" y2="23"/>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                    <line x1="1" y1="12" x2="3" y2="12"/>
+                                    <line x1="21" y1="12" x2="23" y2="12"/>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                                </svg>
+                            </div>
+                            <div class="passion-content">
+                                <h5>Innovation</h5>
+                                <p>Exploring new technologies and pushing the boundaries of web development</p>
+                            </div>
+                        </div>
+                        <div class="passion-item">
+                            <div class="passion-icon">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18 8h1a4 4 0 010 8h-1"/>
+                                    <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                                    <line x1="6" y1="1" x2="6" y2="4"/>
+                                    <line x1="10" y1="1" x2="10" y2="4"/>
+                                    <line x1="14" y1="1" x2="14" y2="4"/>
+                                </svg>
+                            </div>
+                            <div class="passion-content">
+                                <h5>Problem Solving</h5>
+                                <p>Turning complex challenges into elegant, simple solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <blockquote class="philosophy-quote">
+                    "Great web development is not just about code—it's about creating digital experiences that connect, inspire, and make a difference in people's lives."
+                    <cite>— Allan C. Godinez</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project? Let's discuss how we can work together</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card-portfolio">
+                        <h3 class="mb-4">Let's Connect</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email</h5>
+                                    <p>allan.godinez@example.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Phone</h5>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Location</h5>
+                                    <p>San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <h5 class="mb-3">Follow Me</h5>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="social-link">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card-portfolio">
+                        <h3 class="mb-4">Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" rows="6" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-hero w-100">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="me-2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-5 bg-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-subtitle">A showcase of my work and projects</p>
+    </div>
+    <div class="row g-4">
+      <!-- Gallery Item -->
+      <div class="col-sm-6 col-lg-4">
+        <a href="PICTURES/1.jpg" class="gallery-item" data-lightbox="portfolio">
+          <img src="PICTURES/1.jpg" class="img-fluid rounded shadow-sm" alt="Project 1">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <a href="PICTURES/2.jpg" class="gallery-item" data-lightbox="portfolio">
+          <img src="PICTURES/2.jpg" class="img-fluid rounded shadow-sm" alt="Project 2">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <a href="PICTURES/3.jpg" class="gallery-item" data-lightbox="portfolio">
+          <img src="PICTURES/3.jpg" class="img-fluid rounded shadow-sm" alt="Project 3">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <a href="D:\sir godinez\PICTURES\4.jpg" class="gallery-item" data-lightbox="portfolio">
+          <img src="D:\sir godinez\PICTURES\4.jpg" class="img-fluid rounded shadow-sm" alt="Project 4">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <a href="PICTURES/6.jpg" class="gallery-item" data-lightbox="portfolio">
+          <img src="PICTURES/6.jpg" class="img-fluid rounded shadow-sm" alt="Project 5">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <a href="PICTURES/7.jpg" class="gallery-item" data-lightbox="portfolio">
+          <img src="PICTURES/7.jpg" class="img-fluid rounded shadow-sm" alt="Project 6">
+        </a>
+      </div>
+    </div>
+    <a href=""><button>next</button></a>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="py-4 border-top">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Allan C. Godinez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="animation.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
